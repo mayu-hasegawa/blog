@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import media from "styled-media-query"
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import ColumnTitle from './ColumnTitle.js'
+import ColumnTitle from './ColumnTitle'
 
 import pen from '../img/pen.png'
 import heart from '../img/heart.png'

@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ColumnTitle = props => (
+interface ColumnTitleProps {
+  title: string
+}
+
+const ColumnTitle = (props: ColumnTitleProps) => (
   <Title>
     <Text>{props.title}</Text>
   </Title>

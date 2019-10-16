@@ -5,7 +5,11 @@ import { Link } from 'gatsby'
 import TopProfile from './TopProfile'
 import SelfIntro from './SelfIntro'
 
-import topMain from '../img/top_main.jpg'
+const loadImage = require('../img/top_main.jpg')
+
+interface TopProps {
+    loadImage: string
+}
 
 const Top = () => (
   <Wrapper id="top">
@@ -20,7 +24,7 @@ const Top = () => (
 export default Top
 
 const Wrapper = styled.div`
-  background: url(${topMain}) 0 top no-repeat;
+  background: url(${loadImage}) 0 top no-repeat;
   background-size: cover;
   min-height: 430px;
   width: 100%;
@@ -40,7 +44,7 @@ const Block = styled.div`
   max-width: 960px;
   margin: 0 auto;
   position: relative;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -50,10 +54,10 @@ const Block = styled.div`
 
 const Border = styled.div`
   position: absolute;
-  top: 32%;
+  top: 34%;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  ${media.lessThan("small")`
+  ${media.lessThan('small')`
     top: 29%;
   `}
 `

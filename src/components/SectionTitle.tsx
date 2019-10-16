@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const SectionTitle = props => (
+interface SectionTitleProps {
+    title: string
+    subtitle: string
+}
+
+const SectionTitle = (props: SectionTitleProps) => (
   <Wrapper>
     <Title>{props.title}</Title>
     <SubTitle>{props.subtitle}</SubTitle>

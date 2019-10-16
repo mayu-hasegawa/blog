@@ -2,9 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import media from "styled-media-query"
 
-import myphoto from '../img/myphoto.jpg'
+const myphoto = require('../img/myphoto.jpg')
 
-const TopProfile = () => (
+interface TopProfileProps {
+    src: string
+    alt: string
+    myphoto: string
+}
+
+const TopProfile = (props: TopProfileProps) => (
   <Profile>
     <Img
       src={myphoto}
@@ -27,9 +33,10 @@ const Profile = styled.div`
   box-sizing: border-box;
   z-index: 1;
   margin-right: 3%;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     width: 100%;
     max-width: inherit;
+    margin-right: 0;
   `}
 `
 
@@ -44,7 +51,7 @@ const Name = styled.p`
   font-size: 24px;
   color: #FFFFFF;
   margin-top: 30px;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     margin-top: 62px;
   `}
 `

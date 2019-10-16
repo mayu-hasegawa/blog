@@ -1,9 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import media from "styled-media-query"
-import ColumnTitle from './ColumnTitle.js'
+import ColumnTitle from './ColumnTitle'
 
-import human from '../img/silhouette.jpg'
+const human = require('../img/silhouette.jpg')
+
+interface CareerListProps {
+    src: string
+    title: string
+    human: string
+}
 
 const CareerList01 = () => (
   <List>
@@ -62,7 +68,7 @@ const CareerList02 = () => (
   </List>
 )
 
-const CareerList = () => (
+const CareerList = (props: CareerListProps) => (
   <>
     <CareerList01 />
     <CareerList02 />
@@ -76,9 +82,9 @@ const List = styled.div`
   display:-ms-flexbox;
   display:flex;
   -webkit-box-pack: justify;
-	-ms-flex-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -90,16 +96,16 @@ const Content = styled.div`
   width: 50%;
   padding-left: 25px;
   position: relative;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     width: 100%;
   `}
-  ${media.lessThan("small")`
+  ${media.lessThan('small')`
     padding-left: 0;
   `}
 `
 
 const ExContent = styled(Content)`
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     margin-bottom: 60px;
   `}
 `
@@ -110,7 +116,7 @@ const Icon = styled.img`
   position: absolute;
   left: 17px;
   top: 13px;
-  ${media.lessThan("small")`
+  ${media.lessThan('small')`
     left: 0;
   `}
 `
@@ -168,7 +174,7 @@ const Dots = styled.div`
   display:flex;
   margin: 10px 3% 0 5%;
   width: 15%;
-  ${media.lessThan("small")`
+  ${media.lessThan('small')`
     margin: 10px 2% 0 3%;    
   `}
 `
@@ -179,7 +185,7 @@ const Dot = styled.div`
   background: #C4C4C4;
   border-radius: 50%;  
   margin-right: 6px;
-  ${media.lessThan("small")`
+  ${media.lessThan('small')`
     margin-right: 3px;
   `}
 `
