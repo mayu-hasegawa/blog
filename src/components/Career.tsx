@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import CareerList from './CareerList.js'
+import CareerList from './CareerList'
 
 const Career = () => (
   <Wrapper>

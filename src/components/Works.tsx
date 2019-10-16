@@ -4,9 +4,22 @@ import media from "styled-media-query"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
-import output01 from '../img/output01.png'
-import output02 from '../img/output02.png'
-import output03 from '../img/output03.jpg'
+const output01 = require('../img/output01.png')
+const output02 = require('../img/output02.png')
+const output03 = require('../img/output03.jpg')
+
+interface WorksProps {
+    href: string
+    src: string
+    output01: string
+    output02: string
+    output03: string
+    alt: string
+    site: string
+    cording: string
+    icon: any
+    props: any
+}
 
 const Works = () => (
   <Wrapper>
@@ -38,7 +51,7 @@ const Works = () => (
 
 export default Works
 
-const WorksContent = props => (
+const WorksContent = (props: WorksProps) => (
   <Content>
     <Link href={props.href} >
       <WorksImg><img src={props.src} alt={props.alt} /></WorksImg>    
@@ -58,12 +71,12 @@ const Block = styled.div`
   display:-ms-flexbox;
   display:flex;
   -webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -74,7 +87,7 @@ const Block = styled.div`
 const Content = styled.div`
   width: 275px;
   text-align: center;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     width: 100%;
     margin-bottom: 40px;
     &:last-child {
@@ -98,7 +111,7 @@ const Link = styled.a`
 const WorksImg = styled.div`
   width: 100%;
   height: 160px;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     height: inherit;
   `}
 `

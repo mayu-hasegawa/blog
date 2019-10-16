@@ -26,7 +26,7 @@ export default SelfIntro
 const Wrapper = styled.div`
   width: 64%;
   max-width: 612px;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     width: 100%;
     max-width: inherit;
     margin: 24px 0 50px;
@@ -52,7 +52,7 @@ const TextWrapper = styled.div`
   display:flex;
   width: 317px;
   margin-top: 10px;
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     width: 100%;
   `}
 `

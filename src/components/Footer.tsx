@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ScrollUp from './ScrollUp.js'
+import ScrollUp from './ScrollUp'
 
 const Footer = () => (
   <FooterArea>

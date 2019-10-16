@@ -5,7 +5,12 @@ import { animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
-class ScrollUp extends Component {
+interface ScrollProps {
+    icon: any
+    onClick: () => void;
+}
+
+class ScrollUp extends React.Component<ScrollProps> {
 
   scrollToTop = () => {
     scroll.scrollToTop(); 

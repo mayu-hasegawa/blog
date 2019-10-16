@@ -6,7 +6,13 @@ import Works from "../components/Works"
 import Career from "../components/Career"
 import Activity from "../components/Activity"
 
-export default () => (
+interface IndexProps {
+    title: string
+    subtitle: string
+}
+
+const IndexPage = (props: IndexProps) => (
+
   <Layout>
     <Top />
     <SectionTitle
@@ -21,4 +27,7 @@ export default () => (
     />
     <Activity />
   </Layout>
+
 )
+
+export default IndexPage

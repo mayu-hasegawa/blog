@@ -1,11 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
+const facebook = require('../img/social/facebook.svg')
+const instagram = require('../img/social/instagram.svg')
+const twitter = require('../img/social/twitter.svg')
 
-const snsArea = () => (
+interface SnsProps {
+  src: string
+  alt: string
+  facebook: string
+  instagram: string
+  twitter: string
+}
+
+const snsArea = (props: SnsProps) => (
   <Wrapper>
     <LinkWrapper>
       <SnsLink href="https://facebook.com">
@@ -43,8 +51,8 @@ const Wrapper = styled.div`
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 `
 
 const LinkWrapper = styled.div`
@@ -54,8 +62,8 @@ const LinkWrapper = styled.div`
   display:-ms-flexbox;
   display:flex;
   -webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 `
 
 const SnsLink = styled.a`

@@ -3,7 +3,11 @@ import Seo from "./Seo"
 import Sns from "./Sns"
 import Footer from "./Footer"
 
-export default ({ children }) => (
+interface LayoutProps {
+    children?: React.ReactNode
+}
+
+export default ({ children } : LayoutProps) => (
   <div>
     <Seo />
     {children}
