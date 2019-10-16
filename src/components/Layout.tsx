@@ -1,5 +1,5 @@
 import React from "react"
-import Seo from "./Seo"
+import Seo from "./seo"
 import Sns from "./Sns"
 import Footer from "./Footer"
 
