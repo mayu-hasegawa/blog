@@ -12,6 +12,8 @@ https://github.com/gatsbyjs/gatsby-starter-blog
   * gatsby(2.16.1)、gatsby-image(2.2.29)など
 * Typescript
   * gatsby-plugin-typescript(2.1.15)
+* リセットCSSにSCSSを使用
+  * gatsby-plugin-sass(2.1.20)、node-sass(4.12.0)
 * Styled-Components
   * babel-plugin-styled-components(1.10.6)、gatsby-plugin-styled-components(3.1.11)、styled-components(4.4.0)
 * "トップへ戻る" のスムーススクロール
