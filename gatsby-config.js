@@ -3,7 +3,7 @@ module.exports = {
     title: `My Portfolio`,
     author: `Mayu Hasegawa`,
     description: `自己紹介ポートフォリオを作成しました（Gatsby + Netlify CMS）`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://myportfolio-for-baseconnect.netlify.com/`,
     social: {
       twitter: `Mayu Hasegawa`,
     },
