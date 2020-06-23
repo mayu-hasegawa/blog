@@ -18,18 +18,18 @@ const CareerList01 = () => (
       <Block>
         <Border />      
         <TextDetail>
-          <TextBold>Webコーダー | 2017.10 -<br />株式会社グラッドキューブ</TextBold>
+          <TextBold>Webコーダー | 2017.10 -<br />ネット広告代理店(自社開発企業)</TextBold>
         </TextDetail>
       </Block>
       <TextDetail>
-        <TextBold>貿易事務・営業 | 2012.04 - 2017.08<br />三菱倉庫株式会社</TextBold>
+        <TextBold>貿易事務・営業 | 2012.04 - 2017.08<br />某大手倉庫会社</TextBold>
         <Text>治験薬配送オペレーション、貿易事務、<br />輸出営業に携わる。</Text>
       </TextDetail>
     </Content>
     <Content>
       <Icon src={human} /><ColumnTitle title="EDUCATION" />
       <TextDetail>
-        <TextBold>経済学など | 2008.04 - 2012.03<br />関西学院大学 経済学部</TextBold>
+        <TextBold>経済学など | 2008.04 - 2012.03<br />経済学部</TextBold>
       </TextDetail>
     </Content>
   </List>
