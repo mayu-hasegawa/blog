@@ -9,13 +9,13 @@ const SelfIntro = () => (
     <TextWrapper>
       <TextContent>
         <Text>性別</Text>
-        <Text>生年月日</Text>
+        <Text>年齢</Text>
         <Text>現住所</Text>
       </TextContent>
       <TextContent>
         <Text>女性</Text>
-        <Text>1990年2月1日（29歳）</Text>
-        <Text>大阪府 枚方市</Text>
+        <Text>30歳</Text>
+        <Text>大阪府</Text>
       </TextContent>
     </TextWrapper>
   </Wrapper>
